@@ -1,0 +1,55 @@
+//	Headings
+h1, h2, h3, h4, h5, h6 {
+  color: $color-dark;
+  font-family: $font-main;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin: 10px 0 30px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.14;
+
+  &.title {
+    @extend h1;
+  }
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 1.38;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 1.38;
+}
+
+// Basic Text Style
+
+p {
+  margin: 0 0 16px 0;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid $color-light;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0;
+}

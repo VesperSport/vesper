@@ -1,0 +1,22 @@
+a {
+  color: $color-dark;
+  text-decoration: none;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    color: lighten($color-dark, 20%);
+    transition: 0.3s;
+  }
+}
+
+p {
+  a {
+    color: $color-accent;
+
+    &:hover,
+    &:focus {
+      color: lighten($color-accent, 20%);
+    }
+  }
+}

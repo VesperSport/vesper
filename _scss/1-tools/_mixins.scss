@@ -1,0 +1,15 @@
+// Mixins
+@mixin text-uppercase {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-medium
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
