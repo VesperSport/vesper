@@ -1,0 +1,115 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: background-color 0.25s;
+  z-index: 1000;
+  //background-color: rgba($body-bg, .8);
+
+  &:hover {
+    background-color: $body-bg;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &.is-open {
+    background-color: #fff;
+    height: 100vh;
+  }
+  // Mobile view
+  .navigation-menu-button {
+    display: block;
+    float: right;
+    margin: 0;
+    padding-top: 0.6em;
+
+    img {
+      height: 2em;
+      margin: 0;
+    }
+
+    @include media ($small-desktop) {
+      display: none;
+    }
+  }
+
+  // Nav menu
+  .navigation-wrapper {
+    @include outer-container(85%);
+    //@include clearfix;
+    padding: 1.6em 0 2em 0;
+    position: relative;
+  }
+
+  .logo {
+    float: left;
+
+    img {
+      max-height: 2.5em;
+      padding-right: 1em;
+      margin: 0;
+
+      @include media($small-desktop) {
+        max-height: 3em;
+      }
+    }
+  }
+
+  nav {
+    //float: right;
+    padding-top: 1em;
+
+    @include media(small-desktop) {
+      float: right;
+    }
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 20px 0;
+    width: 100%;
+
+    @include media ($small-desktop) {
+      clear: none;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    &.show {
+      display: block;
+    }
+  }
+
+  // Nav items
+  ul li.nav-link {
+    @include text-uppercase;
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    @include media ($small-desktop) {
+      display: inline;
+      text-decoration: none;
+      width: auto;
+    }
+  }
+
+  li.nav-link a {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid $color-medium;
+
+    @include media ($small-desktop) {
+      //float: right;
+      padding: 0 20px;
+      width: auto;
+      border-bottom: 0
+
+    }
+  }
+}

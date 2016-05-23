@@ -1,17 +1,13 @@
 $(document).ready(function() {
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
 
-  $(document).keypress(function(e) {
-    if(e.which == 13) {
-      $('#grid').toggleClass('show').css('height', $(document).height());
-    }
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
   });
-
-  $(".picture").fluidbox();
-
 });
-
-function add(first, second) {
-  return first+second;
-}
-
-var sum = add(5,4);

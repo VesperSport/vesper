@@ -1,0 +1,7 @@
+exclude: '_scss/1-tools/bourbon/**'
+exclude: '_scss/1-tools/neat/**'
+
+linters:
+  PropertySortOrder:
+    order: smacss
+    separate_groups: true

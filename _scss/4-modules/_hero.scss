@@ -1,0 +1,44 @@
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  background-color: #999;
+  background: url('/assets/img/obrazek.jpg');
+  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-wrapper {
+
+
+  .hero-message {
+    text-align: center;
+    padding-top: 600px;
+
+    .hero-header {
+      font-family: 'Lato', sans-serif;
+      font-size: 5em;
+      font-weight: 700;
+      color: $color-light;
+      text-transform: uppercase;
+    }
+
+    .hero-copy {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.1em;
+      font-weight: 400;
+      color: $color-light;
+      text-transform: uppercase;
+    }
+  }
+
+  .hero-arrow-down {
+    @include size(50px);
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 25px);
+    background-color: $color-light;
+    border-radius: 50%;
+  }
+}

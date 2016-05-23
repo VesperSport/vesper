@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  background-color: $color-light;
+}
+
+.footer-wrapper {
+  padding: 20px 0;
+
+  @include media($tablet) {
+    @include outer-container;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-section {
+  flex-grow: 1;
+}
+
+ul.footer-menu {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+// Footer items
+ul li.footer-link {
+  @include text-uppercase;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0.3em 0;
+
+  &.title {
+    font-weight: 600;
+  }
+}
+
+// Footnote
+.footer-note {
+  clear: both;
+  text-align: center;
+  color: $color-dark;
+}

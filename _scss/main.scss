@@ -2,19 +2,29 @@
 @import '1-tools/bourbon/bourbon';
 @import '1-tools/neat/neat';
 @import '1-tools/fonts';
-@import '1-tools/normalize';
 @import '1-tools/vars';
+@import '1-tools/normalize';
 @import '1-tools/reboot';
 @import '1-tools/mixins';
 @import '1-tools/syntax-highlight';
 
 // 2 - BASICS
+@import '2-basics/global';
 @import '2-basics/links';
 @import '2-basics/selection-colors';
 @import '2-basics/typography';
 
 // 3 - LAYOUTS
-@import '3-layouts/global';
+@import '3-layouts/home';
 
 // 4 - MODULES
+@import '4-modules/animation';
 @import '4-modules/nav';
+@import '4-modules/hero';
+@import '4-modules/footer';
+@import '4-modules/why';
+@import '4-modules/instagram';
+@import '4-modules/product';
+@import '4-modules/specs';
+@import '4-modules/icons';
+@import '4-modules/rider';

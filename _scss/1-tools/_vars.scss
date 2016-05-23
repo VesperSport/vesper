@@ -1,6 +1,6 @@
 // Body
-$body-bg:                white;
-$body-color:             black;
+$body-bg:                #fff;
+$body-color:             #000;
 $font-size-base:         1rem !default;
 $font-family-base:       "Open Sans", sans-serif !default;
 $line-height:            1.5 !default;
@@ -8,9 +8,15 @@ $line-height:            1.5 !default;
 
 // Variables
 $color-dark:             #404042;
-$color-medium:           #C6C6C6;
-$color-light:            #F8F8F8;
-$color-accent:           red;
-$baseline:               0.75rem;
+$color-medium:           #c6c6c6;
+$color-light:            #f8f8f8;
+$color-accent:           yellow;
+$baseline:               .75rem;
 $font-main:              "Open Sans", sans-serif;
 $font-code:              Consolas, Monaco, monospace;
+
+// Breakpoints
+$mobile:                 new-breakpoint(max-width 480px);
+$tablet:                 new-breakpoint(min-width 480px);
+$small-desktop:          new-breakpoint(min-width 992px);
+$desktop:                new-breakpoint(min-width 1200px);

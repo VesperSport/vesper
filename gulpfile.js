@@ -1,13 +1,22 @@
 var gulp        = require('gulp');
+var gutil       = require('gulp-util');
 var sass        = require('gulp-sass');
 var browserSync = require('browser-sync');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var plumber     = require('gulp-plumber');
 
+var exec = cp.exec;
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
+
+// Beep function on Ubuntu
+
+gulp.task('beep', function () {
+	exec('paplay /usr/share/sounds/ubuntu/stereo/system-ready.ogg');
+})
 
 // Build the jekyll site
 
@@ -37,6 +46,11 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 gulp.task('sass', function() {
   return gulp.src('_scss/main.scss')
+    .pipe(plumber(function(error) {
+      gulp.start('beep');
+      gutil.log(gutil.colors.red(error.message));
+      this.emit('end');
+    }))
     .pipe(sass({
       includePaths: ['scss'],
       onError: browserSync.notify
@@ -51,8 +65,9 @@ gulp.task('sass', function() {
 // watch html/md files, run jekyll & reload BrowserSync
 
 gulp.task('watch', function () {
+  gulp.watch('_scss/*.scss', ['sass']);
   gulp.watch('_scss/*/*.scss', ['sass']);
-  gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 // default task

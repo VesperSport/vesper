@@ -1,9 +1,9 @@
 // Mixins
 @mixin text-uppercase {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   text-align: center;
-  color: $color-medium
+  color: $color-dark;
 }
 
 @mixin clearfix() {
@@ -12,4 +12,10 @@
     display: table;
     clear: both;
   }
+}
+
+@mixin section {
+  margin: 0 auto;
+  padding: 4em 0 2em 0;
+  width: 100%;
 }
