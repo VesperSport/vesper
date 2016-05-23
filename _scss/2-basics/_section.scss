@@ -1,0 +1,98 @@
+h3.section-title {
+  font-family: $font-main;
+  color: $body-bg;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  padding-bottom: .5em;
+}
+
+.section-wrapper {
+  @include outer-container(85%);
+
+  @include media($tablet) {
+    @include outer-container(70%);
+  }
+
+  @include media($small-desktop) {
+    @include outer-container(50%);
+  }
+
+  .section-content {
+    text-align: center;
+
+    p {
+      font-size: 1.2em;
+
+      &.note {
+        @include text-uppercase;
+        padding-top: 50px;
+        margin: 0;
+
+        img {
+          width: 0.7em;
+          margin: 0 .2em;
+        }
+      }
+    }
+  }
+}
+
+span {
+  padding: .8em 1.2em;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.woodcore-section {
+  @include section;
+  width: 100%;
+  height: 50vh;
+  background: url('/assets/img/cnc.jpg');
+  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-section {
+  @include section-info;
+
+  p {
+    margin: 0;
+  }
+}
+
+.fibreglass-section {
+  @include section;
+  width: 100%;
+  height: 50vh;
+  background: url('/assets/img/fibre.jpg');
+  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.epoxy-section {
+  @include section;
+  width: 100%;
+  height: 50vh;
+  background: url('/assets/img/fibre.jpg');
+  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.topbase-section {
+  @include section;
+  width: 100%;
+  height: 50vh;
+  background: url('/assets/img/topbase.jpg');
+  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

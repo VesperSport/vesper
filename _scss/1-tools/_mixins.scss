@@ -3,7 +3,6 @@
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
-  color: $color-dark;
 }
 
 @mixin clearfix() {
@@ -16,6 +15,18 @@
 
 @mixin section {
   margin: 0 auto;
-  padding: 4em 0 2em 0;
+  padding: 14em 0 2em 0;
+  width: 100%;
+}
+
+@mixin section-home {
+  margin: 0 auto;
+  padding: 3em 0 2em 0;
+  width: 100%;
+}
+
+@mixin section-info {
+  margin: 0 auto;
+  padding: 6em 0;
   width: 100%;
 }

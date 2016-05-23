@@ -1,35 +1,9 @@
 .section-why {
-  @include section;
-  background-color: lightblue;
-}
+  @include section-home;
+  //background-color: lightblue;
 
-.section-wrapper {
-  @include outer-container(85%);
-
-  @include media($tablet) {
-    @include outer-container(70%);
-  }
-
-  @include media($small-desktop) {
-    @include outer-container(50%);
-  }
-
-  .section-content {
-    text-align: center;
-
-    p {
-      font-size: 1.2em;
-
-      &.note {
-        @include text-uppercase;
-        padding-top: 50px;
-        margin: 0;
-
-        img {
-          width: 0.7em;
-          margin: 0 .2em;
-        }
-      }
-    }
+  h3 {
+    color: $color-dark;
+    font-size: 2em;
   }
 }

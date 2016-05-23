@@ -10,6 +10,10 @@
   &:hover {
     background-color: $body-bg;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+
+    li.nav-link a {
+      color: $color-dark;
+    }
   }
 
   &.is-open {
@@ -103,6 +107,7 @@
     width: 100%;
     padding: 20px 0 20px 0;
     border-bottom: 1px solid $color-medium;
+    color: $body-bg;
 
     @include media ($small-desktop) {
       //float: right;
