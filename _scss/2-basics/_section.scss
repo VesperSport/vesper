@@ -1,11 +1,15 @@
 h3.section-title {
   font-family: $font-display;
-  color: $body-bg;
+  color: $color-dark;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 2em;
   text-transform: uppercase;
-  letter-spacing: .15em;
+  //letter-spacing: .05em;
   padding-bottom: .5em;
+
+  @include media($small-desktop) {
+    font-size: 3.2em;
+  }
 }
 
 .section-wrapper {
