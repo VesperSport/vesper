@@ -1002,7 +1002,6 @@ span {
           flex-wrap: wrap; }
 
 .footer-element {
-  background-color: lightblue;
   text-align: center;
   -webkit-flex-basis: 380px;
       -ms-flex-preferred-size: 380px;
