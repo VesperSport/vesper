@@ -4,17 +4,23 @@
 }
 
 .footer-wrapper {
-  padding: 20px 0;
-
-  @include media($tablet) {
-    @include outer-container;
-    display: flex;
-    justify-content: space-between;
+  @include outer-container;
+  padding: 20px 20px;
+  background-color: pink;
   }
-}
 
 .footer-section {
-  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-element {
+  background-color: lightblue;
+  text-align: center;
+  flex-basis: 380px;
+  //flex-wrap: 0;
 }
 
 ul.footer-menu {

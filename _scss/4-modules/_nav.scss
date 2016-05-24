@@ -39,9 +39,9 @@
 
   // Nav menu
   .navigation-wrapper {
-    @include outer-container(85%);
-    //@include clearfix;
-    padding: 1.6em 0 2em 0;
+    @include outer-container(80%);
+    @include clearfix;
+    padding: 1.2em 0 1.6em 0;
     position: relative;
   }
 
@@ -61,7 +61,7 @@
 
   nav {
     //float: right;
-    padding-top: 1em;
+    padding-top: 1.2em;
 
     @include media(small-desktop) {
       float: right;
@@ -110,11 +110,10 @@
     color: $body-bg;
 
     @include media ($small-desktop) {
-      //float: right;
-      padding: 0 20px;
+      float: right;
+      padding: 0 30px;
       width: auto;
-      border-bottom: 0
-
+      border-bottom: 0;
     }
   }
 }
