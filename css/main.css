@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Hind:400,600);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -618,7 +619,8 @@ blockquote {
 body {
   overflow-x: hidden;
   width: 100%;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Hind", sans-serif;
+  font-weight: 400; }
 
 a {
   color: #404042;
@@ -726,7 +728,7 @@ h3.section-title {
   .section-wrapper .section-content {
     text-align: center; }
     .section-wrapper .section-content p {
-      font-size: 1.2em; }
+      font-size: 1em; }
       .section-wrapper .section-content p.note {
         font-size: 16px;
         text-transform: uppercase;
@@ -845,11 +847,15 @@ span {
       .navigation .navigation-menu-button {
         display: none; } }
   .navigation .navigation-wrapper {
-    max-width: 85%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.6em 0 2em 0;
+    padding: 1.2em 0 1.6em 0;
     position: relative; }
+    .navigation .navigation-wrapper::after {
+      content: "";
+      display: table;
+      clear: both; }
     .navigation .navigation-wrapper::after {
       content: "";
       display: table;
@@ -864,7 +870,7 @@ span {
         .navigation .logo img {
           max-height: 3em; } }
   .navigation nav {
-    padding-top: 1em; }
+    padding-top: 1.2em; }
     @media screen and (min-width: small-desktop) {
       .navigation nav {
         float: right; } }
@@ -903,7 +909,8 @@ span {
     color: #fff; }
     @media screen and (min-width: 992px) {
       .navigation li.nav-link a {
-        padding: 0 20px;
+        float: right;
+        padding: 0 30px;
         width: auto;
         border-bottom: 0; } }
 
@@ -917,20 +924,38 @@ span {
   background-size: cover; }
 
 .hero-wrapper .hero-message {
-  text-align: center;
-  padding-top: 60vh;
-  font-family: "Montserrat", sans-serif; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
   .hero-wrapper .hero-message .hero-header {
-    font-size: 3em;
+    font-size: 1em;
     font-weight: 700;
     color: #f8f8f8;
     text-transform: uppercase; }
+    @media screen and (min-width: 480px) {
+      .hero-wrapper .hero-message .hero-header {
+        font-size: 2em; } }
     @media screen and (min-width: 992px) {
       .hero-wrapper .hero-message .hero-header {
-        font-size: 6em; } }
+        font-size: 3em; } }
+    @media screen and (min-width: 1200px) {
+      .hero-wrapper .hero-message .hero-header {
+        font-size: 5em; } }
   .hero-wrapper .hero-message .hero-copy {
-    font-size: 1.6em;
-    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: .3em;
+    font-weight: 400;
     color: #f8f8f8;
     text-transform: uppercase; }
 
@@ -950,30 +975,38 @@ span {
   background-color: #f8f8f8; }
 
 .footer-wrapper {
-  padding: 20px 0; }
-  @media screen and (min-width: 480px) {
-    .footer-wrapper {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .footer-wrapper::after {
-        content: "";
-        display: table;
-        clear: both; } }
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+  background-color: pink; }
+  .footer-wrapper::after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .footer-section {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.footer-element {
+  background-color: lightblue;
+  text-align: center;
+  -webkit-flex-basis: 380px;
+      -ms-flex-preferred-size: 380px;
+          flex-basis: 380px; }
 
 ul.footer-menu {
   margin: 0 auto;
@@ -1226,7 +1259,7 @@ ul li.footer-link {
 .technology-wrapper .technology-message {
   text-align: center;
   padding-top: 50vh;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Hind", sans-serif; }
   .technology-wrapper .technology-message .technology-header {
     font-size: 3em;
     font-weight: 700;
