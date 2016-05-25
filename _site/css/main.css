@@ -557,11 +557,12 @@ span {
   padding: .8em 1.2em;
   background-color: black;
   -webkit-border-radius: 5px;
-          border-radius: 5px; }
+          border-radius: 5px;
+  color: white; }
 
 .woodcore-section {
   margin: 0 auto;
-  padding: 14em 0 2em 0;
+  padding: 2em 0 2em 0;
   width: 100%;
   width: 100%;
   height: 50vh;
@@ -579,29 +580,29 @@ span {
 
 .fibreglass-section {
   margin: 0 auto;
-  padding: 14em 0 2em 0;
+  padding: 2em 0 2em 0;
   width: 100%;
   width: 100%;
   height: 50vh;
-  background: url("/assets/img/fibre.jpg");
+  background: url("/assets/img/fibreglass.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
 .epoxy-section {
   margin: 0 auto;
-  padding: 14em 0 2em 0;
+  padding: 2em 0 2em 0;
   width: 100%;
   width: 100%;
   height: 50vh;
-  background: url("/assets/img/fibre.jpg");
+  background: url("/assets/img/epoxy.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
 .topbase-section {
   margin: 0 auto;
-  padding: 14em 0 2em 0;
+  padding: 2em 0 2em 0;
   width: 100%;
   width: 100%;
   height: 50vh;
