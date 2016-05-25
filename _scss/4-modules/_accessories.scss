@@ -6,6 +6,15 @@
   padding: 140px 0 30px;
 }
 
+.subsection-product {
+  color: red;
+  @include clearfix;
+  width: 100%;
+  //background-color: darken(lightblue, 5);
+  background: linear-gradient(to bottom right, red, darken(red, 25));
+  padding: 0;
+}
+
 .product-container {
   @include outer-container;
   width: 100%;
@@ -19,7 +28,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 400px;
+  height: 300px;
 
   @include media($small-desktop) {
     @include span-columns(8 of 12);

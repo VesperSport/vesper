@@ -8,13 +8,13 @@
   //background-color: rgba($body-bg, .8);
 
   &:hover {
-    background-color: #111;
+    //background-color: #111;
     //box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
   }
 
   &.is-open {
-    background-color: #fff;
-    height: 100vh;
+    background-color: #111;
+    //height: 100vh;
   }
   // Mobile view
   .navigation-menu-button {
