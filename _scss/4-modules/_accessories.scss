@@ -1,17 +1,16 @@
-.section-product {
+.section-accessories {
   @include clearfix;
   width: 100%;
   //background-color: darken(lightblue, 5);
-  background: linear-gradient(to bottom right, lightblue, darken(lightblue, 25));
+  //background: linear-gradient(to bottom right, lightblue, darken(lightblue, 25));
   padding: 140px 0 30px;
 }
 
 .subsection-product {
-  color: red;
   @include clearfix;
   width: 100%;
   //background-color: darken(lightblue, 5);
-  background: linear-gradient(to bottom right, red, darken(red, 25));
+  //background: linear-gradient(to bottom right, red, darken(lightblue, 25));
   padding: 0;
 }
 
@@ -21,14 +20,10 @@
   //background-color: lightblue;
 }
 
-.product-images {
+.accessories-images {
   @include span-columns(12);
-  //background-color: blue;
-  background-image: url('/assets/img/kite.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   height: 300px;
+  margin-top: 50px;
 
   @include media($small-desktop) {
     @include span-columns(8 of 12);
@@ -42,7 +37,7 @@
   text-align: center;
 
   h1 {
-    color: white;
+    color: #111;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2.4em;
@@ -62,6 +57,14 @@
 
 .product-description {
   padding: 1em 0 0;
+
+  p {
+    margin: .4em;
+  }
+
+  ul {
+    margin: 0 -40px;
+  }
 }
 
 .product-buy {
@@ -71,7 +74,7 @@
   .button {
     display: inline-block;
     background-color: white;
-    margin-top: 20px;
+    margin: 20px 10px;
     padding: .6em 1.2em;
     border: 1px solid white;
     border-radius: 5px;
@@ -83,4 +86,77 @@
       color: white;
     }
   }
+}
+
+.footstrap1 {
+  @include span-columns(6 of 12);
+  background-image: url('/assets/img/footstrap01.png');
+  //background-color: pink;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footstrap2 {
+  @include span-columns(6 of 12);
+  background-image: url('/assets/img/footstrap02.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footpad1 {
+  @include span-columns(6 of 12);
+  background-image: url('/assets/img/footpad01.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footpad2 {
+  @include span-columns(6 of 12);
+  background-image: url('/assets/img/footpad02.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.handle1 {
+  @include span-columns(6 of 12);
+  background-image: url('/assets/img/holder02.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.handle2 {
+  @include span-columns(6 of 12);
+  background-image: url('/assets/img/holder01.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.handle1 {
+  @include span-columns(6 of 12);
+  background-image: url('/assets/img/holder02.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.handle2 {
+  @include span-columns(6 of 12);
+  background-image: url('/assets/img/holder01.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

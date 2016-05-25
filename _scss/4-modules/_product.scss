@@ -15,7 +15,7 @@
 .product-images {
   @include span-columns(12);
   //background-color: blue;
-  background-image: url('/assets/img/kite.png');
+  //background-image: url('/assets/img/kite.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

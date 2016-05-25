@@ -1,11 +1,17 @@
 .section-contact {
-  @include section-info;
+  margin: 0 auto;
+  padding: 12em 0 6em 0;
+  width: 100%;
 }
 
 .contact-wrapper {
   @include outer-container;
   padding: 20px 20px;
+
+  h2 {
+    text-transform: uppercase;
   }
+}
 
 .contact-element {
   @include span-columns(12);

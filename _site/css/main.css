@@ -894,7 +894,6 @@ ul li.footer-link {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-image: url("/assets/img/kite.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1139,7 +1138,7 @@ h4.video-title {
 
 .section-contact {
   margin: 0 auto;
-  padding: 6em 0;
+  padding: 12em 0 6em 0;
   width: 100%; }
 
 .contact-wrapper {
@@ -1151,6 +1150,8 @@ h4.video-title {
     content: "";
     display: table;
     clear: both; }
+  .contact-wrapper h2 {
+    text-transform: uppercase; }
 
 .contact-element {
   float: left;
@@ -1196,23 +1197,16 @@ ul li.footer-link {
   ul li.footer-link.title {
     font-weight: 600; }
 
-.section-product {
+.section-accessories {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(#4baac8));
-  background: -webkit-linear-gradient(top left, lightblue, #4baac8);
-  background: linear-gradient(to bottom right, lightblue, #4baac8);
   padding: 140px 0 30px; }
-  .section-product::after {
+  .section-accessories::after {
     content: "";
     display: table;
     clear: both; }
 
 .subsection-product {
-  color: red;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right bottom, from(red), to(maroon));
-  background: -webkit-linear-gradient(top left, red, maroon);
-  background: linear-gradient(to bottom right, red, maroon);
   padding: 0; }
   .subsection-product::after {
     content: "";
@@ -1229,25 +1223,22 @@ ul li.footer-link {
     display: table;
     clear: both; }
 
-.product-images {
+.accessories-images {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-image: url("/assets/img/kite.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 300px; }
-  .product-images:last-child {
+  height: 300px;
+  margin-top: 50px; }
+  .accessories-images:last-child {
     margin-right: 0; }
   @media screen and (min-width: 992px) {
-    .product-images {
+    .accessories-images {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 65.88078%; }
-      .product-images:last-child {
+      .accessories-images:last-child {
         margin-right: 0; } }
 
 .product-content {
@@ -1260,7 +1251,7 @@ ul li.footer-link {
   .product-content:last-child {
     margin-right: 0; }
   .product-content h1, .product-content h2.title {
-    color: white;
+    color: #111;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2.4em;
@@ -1281,6 +1272,10 @@ ul li.footer-link {
 
 .product-description {
   padding: 1em 0 0; }
+  .product-description p {
+    margin: .4em; }
+  .product-description ul {
+    margin: 0 -40px; }
 
 .product-buy {
   text-transform: uppercase;
@@ -1288,7 +1283,7 @@ ul li.footer-link {
   .product-buy .button {
     display: inline-block;
     background-color: white;
-    margin-top: 20px;
+    margin: 20px 10px;
     padding: .6em 1.2em;
     border: 1px solid white;
     -webkit-border-radius: 5px;
@@ -1299,3 +1294,107 @@ ul li.footer-link {
       transition: all .2s;
       border: 1px solid white;
       color: white; }
+
+.footstrap1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url("/assets/img/footstrap01.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .footstrap1:last-child {
+    margin-right: 0; }
+
+.footstrap2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url("/assets/img/footstrap02.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .footstrap2:last-child {
+    margin-right: 0; }
+
+.footpad1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url("/assets/img/footpad01.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .footpad1:last-child {
+    margin-right: 0; }
+
+.footpad2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url("/assets/img/footpad02.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .footpad2:last-child {
+    margin-right: 0; }
+
+.handle1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url("/assets/img/holder02.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .handle1:last-child {
+    margin-right: 0; }
+
+.handle2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url("/assets/img/holder01.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .handle2:last-child {
+    margin-right: 0; }
+
+.handle1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url("/assets/img/holder02.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .handle1:last-child {
+    margin-right: 0; }
+
+.handle2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url("/assets/img/holder01.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .handle2:last-child {
+    margin-right: 0; }
