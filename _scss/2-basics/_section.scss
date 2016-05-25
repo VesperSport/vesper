@@ -27,7 +27,8 @@ h3.section-title {
     text-align: center;
 
     p {
-      font-size: 1em;
+      font-size: 1.4em;
+      text-align: center;
 
       &.note {
         @include text-uppercase;

@@ -1,0 +1,44 @@
+.section-contact {
+  @include section-info;
+}
+
+.contact-wrapper {
+  @include outer-container;
+  padding: 20px 20px;
+  }
+
+.contact-element {
+  @include span-columns(12);
+  @include text-uppercase;
+  text-align: center;
+  padding: 20px 0;
+
+  @include media($small-desktop) {
+    @include span-columns(4);
+    text-align: left;
+  }
+}
+
+.contact-title {
+  font-size: 1.4em;
+  color: #555;
+}
+
+.contact-content {
+  p {
+    margin: 0;
+  }
+}
+
+// Footer items
+ul li.footer-link {
+  @include text-uppercase;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0.3em 0;
+
+  &.title {
+    font-weight: 600;
+  }
+}

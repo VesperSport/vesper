@@ -6,21 +6,33 @@
 .footer-wrapper {
   @include outer-container;
   padding: 20px 20px;
-  background-color: pink;
   }
 
 .footer-section {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  flex-wrap: wrap;
+  //display: flex;
+  //justify-content: space-between;
+  //align-content: center;
+  //flex-wrap: wrap;
 }
 
 .footer-element {
-  //background-color: lightblue;
+  @include span-columns(12);
+  @include text-uppercase;
   text-align: center;
-  flex-basis: 380px;
   //flex-wrap: 0;
+  padding: 20px 0;
+  font-size: 12px;
+
+  @include media($small-desktop) {
+    @include span-columns(4);
+  }
+}
+
+.element-header {
+  color: #555;
+}
+
+.element-content {
 }
 
 ul.footer-menu {
@@ -43,7 +55,22 @@ ul li.footer-link {
 
 // Footnote
 .footer-note {
+  @include text-uppercase;
+  font-size: 12px;
+  padding-top: 20px;
   clear: both;
   text-align: center;
   color: $color-dark;
+}
+
+.share {
+  text-align: center;
+
+  .icon {
+    @include size(50px);
+    display: inline-block;
+    margin: 0 20px 40px 0;
+    border-radius: 50%;
+    border: 1px solid #111;
+  }
 }
