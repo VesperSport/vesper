@@ -1,0 +1,40 @@
+.about-img {
+  width: 100%;
+  height: 80vh;
+  background-color: #999;
+  background: url('/assets/img/panorama.jpg');
+  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h3 {
+    font-size: 2em;
+  }
+}
+
+.about-wrapper {
+  .about-message {
+    text-align: center;
+    padding-top: 50vh;
+    font-family: $font-main;
+
+    .about-header {
+      font-size: 3em;
+      font-weight: 700;
+      color: $color-light;
+      text-transform: uppercase;
+
+      @include media($small-desktop) {
+        font-size: 6em;
+      }
+    }
+
+    .about-copy {
+      font-size: 1.6em;
+      font-weight: 700;
+      color: $color-light;
+      text-transform: uppercase;
+    }
+  }
+}

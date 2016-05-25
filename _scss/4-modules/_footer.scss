@@ -67,10 +67,17 @@ ul li.footer-link {
   text-align: center;
 
   .icon {
-    @include size(50px);
+    @include size(40px);
     display: inline-block;
-    margin: 0 20px 40px 0;
-    border-radius: 50%;
-    border: 1px solid #111;
+    margin: 0 20px 0;
+
+    &:hover {
+      background-color: rgba(black, .3);
+      border-radius: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 }

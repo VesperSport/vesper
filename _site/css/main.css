@@ -856,13 +856,16 @@ ul li.footer-link {
 .share {
   text-align: center; }
   .share .icon {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: inline-block;
-    margin: 0 20px 40px 0;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    border: 1px solid #111; }
+    margin: 0 20px 0; }
+    .share .icon:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .share .icon img {
+      width: 100%; }
 
 .section-why {
   margin: 0 auto;
@@ -871,9 +874,6 @@ ul li.footer-link {
 
 .section-product {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(#4baac8));
-  background: -webkit-linear-gradient(top left, lightblue, #4baac8);
-  background: linear-gradient(to bottom right, lightblue, #4baac8);
   padding: 140px 0 30px; }
   .section-product::after {
     content: "";
@@ -895,6 +895,7 @@ ul li.footer-link {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
+  background-image: url("/assets/img/aurora-web.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -943,18 +944,17 @@ ul li.footer-link {
   padding: 1em 0 0; }
 
 .product-buy {
-  text-transform: uppercase;
-  cursor: pointer; }
+  text-transform: uppercase; }
   .product-buy .button {
     display: inline-block;
-    background-color: white;
+    background: lightblue;
     margin-top: 20px;
     padding: .6em 1.2em;
     border: 1px solid white;
     -webkit-border-radius: 5px;
             border-radius: 5px; }
     .product-buy .button:hover {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: #5fb3ce;
       -webkit-transition: all .2s;
       transition: all .2s;
       border: 1px solid white;
@@ -1278,24 +1278,6 @@ ul li.footer-link {
   .product-description ul {
     margin: 0 -40px; }
 
-.product-buy {
-  text-transform: uppercase;
-  cursor: pointer; }
-  .product-buy .button {
-    display: inline-block;
-    background-color: white;
-    margin: 20px 10px;
-    padding: .6em 1.2em;
-    border: 1px solid white;
-    -webkit-border-radius: 5px;
-            border-radius: 5px; }
-    .product-buy .button:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-      -webkit-transition: all .2s;
-      transition: all .2s;
-      border: 1px solid white;
-      color: white; }
-
 .footstrap1 {
   float: left;
   display: block;
@@ -1399,3 +1381,32 @@ ul li.footer-link {
   background-size: contain; }
   .handle2:last-child {
     margin-right: 0; }
+
+.about-img {
+  width: 100%;
+  height: 80vh;
+  background-color: #999;
+  background: url("/assets/img/panorama.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .about-img h3 {
+    font-size: 2em; }
+
+.about-wrapper .about-message {
+  text-align: center;
+  padding-top: 50vh;
+  font-family: "Hind", sans-serif; }
+  .about-wrapper .about-message .about-header {
+    font-size: 3em;
+    font-weight: 700;
+    color: #f8f8f8;
+    text-transform: uppercase; }
+    @media screen and (min-width: 992px) {
+      .about-wrapper .about-message .about-header {
+        font-size: 6em; } }
+  .about-wrapper .about-message .about-copy {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #f8f8f8;
+    text-transform: uppercase; }

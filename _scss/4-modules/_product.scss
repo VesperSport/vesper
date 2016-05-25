@@ -2,7 +2,7 @@
   @include clearfix;
   width: 100%;
   //background-color: darken(lightblue, 5);
-  background: linear-gradient(to bottom right, lightblue, darken(lightblue, 25));
+  //background: linear-gradient(to bottom right, lightblue, darken(lightblue, 25));
   padding: 140px 0 30px;
 }
 
@@ -15,7 +15,7 @@
 .product-images {
   @include span-columns(12);
   //background-color: blue;
-  //background-image: url('/assets/img/kite.png');
+  background-image: url('/assets/img/aurora-web.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -57,18 +57,18 @@
 
 .product-buy {
   text-transform: uppercase;
-  cursor: pointer;
+  //cursor: pointer;
 
   .button {
     display: inline-block;
-    background-color: white;
+    background: lightblue;
     margin-top: 20px;
     padding: .6em 1.2em;
     border: 1px solid white;
     border-radius: 5px;
 
     &:hover {
-      background-color: rgba(white, .2);
+      background-color: darken(lightblue, 20);
       transition: all .2s;
       border: 1px solid white;
       color: white;
