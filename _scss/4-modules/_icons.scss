@@ -8,10 +8,11 @@
 }
 
 .icons-container {
-  //@include outer-container;
-  display: inline-block;
+  @include outer-container;
+  //display: inline-block;
   //font-size: 14px;
-  //background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tooltip-item {
