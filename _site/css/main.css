@@ -616,11 +616,21 @@ span {
   width: 100%;
   margin: 0; }
   .section-photo-full img {
-    width: -webkit-calc(50% - 2px);
-    width: calc(50% - 2px);
-    height: 600px;
-    -o-object-fit: fill;
-       object-fit: fill; }
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-bottom: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 500px; }
+    .section-photo-full img:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 992px) {
+      .section-photo-full img {
+        margin-right: 0;
+        width: 50%;
+        height: 600px; } }
 
 #content {
   animation: fadein 1s;
