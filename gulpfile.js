@@ -5,6 +5,8 @@ var browserSync = require('browser-sync');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var plumber     = require('gulp-plumber');
+var imagemin    = require('gulp-imagemin');
+var imageResize = require('gulp-image-resize');
 
 var exec = cp.exec;
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -42,7 +44,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
   });
 });
 
-// comile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+// compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
 
 gulp.task('sass', function() {
   return gulp.src('_scss/main.scss')
@@ -61,6 +63,19 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 })
 
+// workflow for processing images - resize and imagemin
+
+gulp.task('image', function () {
+  return gulp.src('assets/src/images/*')
+    .pipe(imageResize({
+       width : 1920,
+       height : 1920,
+       sharpen : true
+     }))
+    .pipe(imagemin())
+    .pipe(gulp.dest('assets/img'))
+})
+
 // watch scss files for changes and recompile
 // watch html/md files, run jekyll & reload BrowserSync
 
@@ -73,28 +88,3 @@ gulp.task('watch', function () {
 // default task
 
 gulp.task('default', ['browser-sync', 'watch']);
-
-
-
-// moja wczesniejsza wersja
-//
-// gulp.task('serve', ['sass'], function() {
-//   browserSync.init({
-//     server: {
-//       baseDir: "./"
-//     }
-//   });
-//
-//   gulp.watch('./_sass/**/*.sass', ['sass']);
-//   gulp.watch('./_sass/**/*.scss', ['sass']);
-//   gulp.watch('index.html').on('change', browserSync.reload);
-// });
-//
-// gulp.task('sass', function () {
-//    return gulp.src('./css/main.sass')
-//       .pipe(sass().on('error', sass.logError))
-//       .pipe(gulp.dest('./build'))
-//       .pipe(browserSync.stream());
-// });
-//
-// gulp.task('default', ['serve']);
