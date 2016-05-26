@@ -612,6 +612,16 @@ span {
   background-position: center;
   background-size: cover; }
 
+.section-photo-full {
+  width: 100%;
+  margin: 0; }
+  .section-photo-full img {
+    width: -webkit-calc(50% - 2px);
+    width: calc(50% - 2px);
+    height: 600px;
+    -o-object-fit: fill;
+       object-fit: fill; }
+
 #content {
   animation: fadein 1s;
   -moz-animation: fadein 1s;

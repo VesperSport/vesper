@@ -102,3 +102,16 @@ span {
   background-position: center;
   background-size: cover;
 }
+
+.section-photo-full {
+  width: 100%;
+  margin: 0;
+  //height: 600px;
+
+  img {
+    width: calc(50% - 2px);
+    height: 600px;
+    //height: 100%;
+    object-fit: fill;
+  }
+}
