@@ -121,18 +121,18 @@
   background-size: contain;
 }
 
-.handle1 {
+.fin01 {
   @include span-columns(6 of 12);
-  background-image: url('/assets/img/holder02.png');
+  background-image: url('/assets/img/fin01.png');
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.handle2 {
+.fin02 {
   @include span-columns(6 of 12);
-  background-image: url('/assets/img/holder01.png');
+  background-image: url('/assets/img/fin02.png');
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
