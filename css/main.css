@@ -614,7 +614,7 @@ span {
 
 .section-photo-full {
   width: 100%;
-  margin: 0; }
+  margin: 0px; }
   .section-photo-full img {
     float: left;
     display: block;
@@ -1392,30 +1392,30 @@ ul li.footer-link {
   .handle2:last-child {
     margin-right: 0; }
 
-.handle1 {
+.fin01 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  background-image: url("/assets/img/holder02.png");
+  background-image: url("/assets/img/fin01.png");
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
-  .handle1:last-child {
+  .fin01:last-child {
     margin-right: 0; }
 
-.handle2 {
+.fin02 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  background-image: url("/assets/img/holder01.png");
+  background-image: url("/assets/img/fin02.png");
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
-  .handle2:last-child {
+  .fin02:last-child {
     margin-right: 0; }
 
 .about-img {
