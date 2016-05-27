@@ -1,0 +1,82 @@
+---
+layout: default
+---
+<section class="section-product">
+  <div class="product-container">
+    <div class="product-images">
+      <img src="{{ page.image }}" alt="{{ page.boardName }}">
+    </div>
+    <div class="product-content">
+      <h1> {{ page.boardName }} </h1>
+      <div class="subheader">Current status: {{ page.status }}</div>
+      <div class="product-description">
+        <p> {{ page.description }}<p>
+      </div>
+      <div class="product-buy">
+        <a href="/spots"><div class="button"> {{ page.callToAction }}</div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-specs">
+  <div class="specs-container">
+    <div class="table-container">
+      <table class="table-minimal">
+        <thead>
+          <tr>
+            <th>Length</th>
+            <th>{{ page.specs.small.length }} cm</th>
+            <th>{{ page.specs.medium.length }} cm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Width</td>
+            <td>{{ page.specs.small.width }} cm</td>
+            <td>{{ page.specs.medium.width }} cm</td>
+          </tr>
+          <tr>
+            <td>Rocker</td>
+            <td>{{ page.specs.small.rocker }} mm</td>
+            <td>{{ page.specs.medium.rocker }} mm</td>
+          </tr>
+          <tr>
+            <td>Rider weight</td>
+            <td>{{ page.specs.small.riderWeight }} kg</td>
+            <td>{{ page.specs.medium.riderWeight }} kg</td>
+          </tr>
+          <tr>
+            <td>Flex</td>
+            <td>{{ page.specs.small.flex }}</td>
+            <td>{{ page.specs.small.flex }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- NEEDS WORK!
+{% if page.showIcons == true %}
+
+<section class="section-icons">
+  <div class="icons-container">
+
+    {% for icon in page.icons %}
+        <div class="tooltip-item"> {{ page.icons.icon.name }}
+          <div class="tooltip">
+            <p> {{ page.icons.icon.content }} </p>
+          </div>
+        </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% endif %} -->
+
+<section class="section-photo-full">
+  <img src="/assets/img/aurora_photo1.jpg" alt="">
+  <img src="/assets/img/aurora_photo2.jpg" alt="">
+</section>

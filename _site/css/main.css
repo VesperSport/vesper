@@ -918,10 +918,6 @@ ul li.footer-link {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-image: url("/assets/img/aurora-web.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   height: 400px; }
   .product-images:last-child {
     margin-right: 0; }
@@ -933,6 +929,12 @@ ul li.footer-link {
       width: 65.88078%; }
       .product-images:last-child {
         margin-right: 0; } }
+  .product-images img {
+    display: block;
+    margin: 0 auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 100%; }
 
 .product-content {
   float: left;

@@ -82,7 +82,7 @@ gulp.task('image', function () {
 gulp.task('watch', function () {
   gulp.watch('_scss/*.scss', ['sass']);
   gulp.watch('_scss/*/*.scss', ['sass']);
-  gulp.watch(['*.html', 'kiteboards/*.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch(['*.html', 'kiteboards/*.md', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 // default task
