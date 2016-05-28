@@ -12,6 +12,25 @@ h3.section-title {
   }
 }
 
+.full-width-section {
+  //width: 100%;
+  text-align: center;
+
+  img {
+    //position: relative;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h3 {
+    position: relative;
+    top: -30vh;
+    color: black;
+    margin-bottom: -10vh;
+  }
+}
+
 .section-wrapper {
   @include outer-container(85%);
 
@@ -24,6 +43,7 @@ h3.section-title {
   }
 
   .section-content {
+    padding: 60px 0;
     text-align: center;
 
     p {
@@ -41,6 +61,10 @@ h3.section-title {
         }
       }
     }
+
+    h3 {
+      padding: 30px 0;
+    }
   }
 }
 
@@ -49,58 +73,6 @@ span {
   background-color: black;
   border-radius: 5px;
   color: white;
-}
-
-.woodcore-section {
-  @include section;
-  width: 100%;
-  height: 50vh;
-  background: url('/assets/img/cnc.jpg');
-  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.text-section {
-  @include section-info;
-
-  p {
-    margin: 0;
-  }
-}
-
-.fibreglass-section {
-  @include section;
-  width: 100%;
-  height: 50vh;
-  background: url('/assets/img/fibreglass.jpg');
-  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.epoxy-section {
-  @include section;
-  width: 100%;
-  height: 50vh;
-  background: url('/assets/img/epoxy.jpg');
-  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.topbase-section {
-  @include section;
-  width: 100%;
-  height: 50vh;
-  background: url('/assets/img/topbase.jpg');
-  //background: url('https://images.unsplash.com/photo-1452215199360-c16ba37005fe?ixlib=rb-0.3.5&q=80&fm=jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .section-photo-full {

@@ -2,36 +2,35 @@
   @include clearfix;
   width: 100%;
   //background-color: $body-bg;
-  background: lightblue;
-  padding: 160px 0 30px;
+  //background: lightblue;
+  padding: 80px 0 30px;
   text-align: center;
 }
 
 .icons-container {
   @include outer-container;
+  //background: pink;
   //display: inline-block;
   //font-size: 14px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .tooltip-item {
-  $base-border-radius: 3px !default;
+  $base-border-radius: 8px !default;
   $base-line-height: 1.5em !default;
   $base-font-color: $color-dark !default;
   $tooltip-background: $body-bg;
   $tooltip-color: $base-font-color;
   $tooltip-max-width: 16em;
   $tooltip-arrow-width: 8px;
-  $tooltip-shadow: 0 2px 2px silver;
-  $tooltip-distance-from-item: 3em;
+  $tooltip-shadow: 0 2px 2px lightblue;
+  $tooltip-distance-from-item: 8em;
   $tooltip-arrow-distance-from-box: -1em;
 
-  background: $tooltip-background;
-  border: 1px solid $color-medium;
-  border-radius: $base-border-radius;
+  //background: $tooltip-background;
+  //border: 1px solid $color-medium;
+  //border-radius: $base-border-radius;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.5em;
   position: relative;
   text-align: center;
 
@@ -39,6 +38,12 @@
   &:hover .tooltip {
     opacity: 1;
     visibility: visible;
+  }
+
+  img {
+    display: inline-block;
+    margin: 0 auto;
+    width: 120px;
   }
 
   .tooltip {
@@ -70,7 +75,7 @@
       border: $tooltip-arrow-width solid transparent;
       bottom: $tooltip-arrow-distance-from-box;
       color: $tooltip-background;
-      content: "▼";
+      //content: "▼";
       font-size: 1.4em;
       margin-left: -$tooltip-arrow-width;
       text-align: center;

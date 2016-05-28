@@ -19,6 +19,25 @@ layout: default
   </div>
 </section>
 
+{% if page.showIcons == true %}
+
+<section class="section-icons">
+  <div class="icons-container">
+    <div class="title"><h3>Properties of {{ page.boardName }} board.</h3></div>
+
+    {% for item in page.icons %}
+        <div class="tooltip-item"><img src="{{ item.path }}" alt="{{ item.name }}">
+          <div class="tooltip">
+            <p> {{ item.content }} </p>
+          </div>
+        </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% endif %}
+
 <section class="section-specs">
   <div class="specs-container">
     <div class="table-container">
@@ -49,7 +68,7 @@ layout: default
           <tr>
             <td>Flex</td>
             <td>{{ page.specs.small.flex }}</td>
-            <td>{{ page.specs.small.flex }}</td>
+            <td>{{ page.specs.medium.flex }}</td>
           </tr>
         </tbody>
       </table>
@@ -57,26 +76,14 @@ layout: default
   </div>
 </section>
 
-<!-- NEEDS WORK!
-{% if page.showIcons == true %}
 
-<section class="section-icons">
-  <div class="icons-container">
-
-    {% for icon in page.icons %}
-        <div class="tooltip-item"> {{ page.icons.icon.name }}
-          <div class="tooltip">
-            <p> {{ page.icons.icon.content }} </p>
-          </div>
-        </div>
-    {% endfor %}
-
-  </div>
-</section>
-
-{% endif %} -->
 
 <section class="section-photo-full">
-  <img src="/assets/img/aurora_photo1.jpg" alt="">
-  <img src="/assets/img/aurora_photo2.jpg" alt="">
+
+  {% for item in page.images %}
+
+  <img src="{{ item.path }}" alt="{{ item.name }}">
+
+  {% endfor %}
+  
 </section>
