@@ -48,11 +48,15 @@
   }
 
   .hero-arrow-down {
-    @include size(50px);
+    @include size(40px);
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     left: calc(50% - 25px);
-    background-color: $color-light;
-    border-radius: 50%;
+    text-align: center;
+
+    img {
+      width: 100%;
+      transform: rotate(90deg);
+    }
   }
 }

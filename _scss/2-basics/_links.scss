@@ -12,11 +12,11 @@ a {
 
 p {
   a {
-    color: $color-accent;
+    color: $color-medium;
 
     &:hover,
     &:focus {
-      color: lighten($color-accent, 20%);
+      color: darken($color-medium, 20%);
     }
   }
 }
