@@ -29,7 +29,7 @@ specs:
     riderWeight:
     flex:
 
-showIcons: true
+showIcons: false
 icons:
   - name: woodcore
     path: /../assets/img/icons/woodcore.png
