@@ -10,7 +10,7 @@ layout: default
       <h1> {{ page.boardName }} </h1>
       <div class="subheader">Current status: {{ page.status }}</div>
       <div class="product-description">
-        <p> {{ page.description }}<p>
+        <p> {{ page.boardDescription }}<p>
       </div>
       <div class="product-buy">
         <a href="/spots"><div class="button"> {{ page.callToAction }}</div></a>
@@ -85,5 +85,5 @@ layout: default
   <img src="{{ item.path }}" alt="{{ item.name }}">
 
   {% endfor %}
-  
+
 </section>

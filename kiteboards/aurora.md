@@ -1,11 +1,13 @@
 ---
+
+title: Aurora | Vesper Sport
+description: First Vesper kiteboard model. Prototype model for testing purposes. Ride it and give us some feedback.
+
 layout: product
 category: kiteboards
-title: Aurora | Vesper Sport
-
 boardName: Aurora
 status: testing
-description: First Vesper kiteboard model. Prototype model for testing purposes. Ride it and give us some feedback.
+boardDescription: First Vesper kiteboard model. Prototype model for testing purposes. Ride it and give us some feedback.
 callToAction: Testing spots
 image: /../assets/img/aurora-web.png
 

@@ -14,3 +14,6 @@ youtube:
 markdown: kramdown
 highlighter: null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
