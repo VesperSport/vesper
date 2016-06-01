@@ -1,13 +1,13 @@
 ---
 
-title: Aurora - Vesper Kitesurf boards 2016
-description: First Vesper kitesurf board model. Prototype model for testing purposes. Ride it and give us some feedback.
+title: Aurora - Vesper Kitesurf 2016
+description: First Vesper kitesurf board. Prototype model for testing purposes. Ride it and give us some feedback.
 
 layout: product
 category: kitesurf
 boardName: Aurora
 status: testing
-boardDescription: First Vesper kitesurf board model. Prototype model for testing purposes. Ride it and give us some feedback.
+boardDescription: First Vesper kitesurf board. Prototype model for testing purposes. Ride it and give us some feedback.
 callToAction: Testing spots
 image: /../assets/img/aurora-web.png
 

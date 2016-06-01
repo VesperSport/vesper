@@ -19,24 +19,7 @@ layout: default
   </div>
 </section>
 
-{% if page.showIcons == true %}
 
-<section class="section-icons">
-  <div class="icons-container">
-    <div class="title"><h3>Properties of {{ page.boardName }} board.</h3></div>
-
-    {% for item in page.icons %}
-        <div class="tooltip-item"><img src="{{ item.path }}" alt="{{ item.name }}">
-          <div class="tooltip">
-            <p> {{ item.content }} </p>
-          </div>
-        </div>
-    {% endfor %}
-
-  </div>
-</section>
-
-{% endif %}
 
 <section class="section-specs">
   <div class="specs-container">
@@ -76,7 +59,24 @@ layout: default
   </div>
 </section>
 
+{% if page.showIcons == true %}
 
+<section class="section-icons">
+  <div class="icons-container">
+    <div class="title"><h3>Technology used in {{ page.boardName }} kitesurf board.</h3></div>
+
+    {% for item in page.icons %}
+        <div class="tooltip-item"><img src="{{ item.path }}" alt="{{ item.name }}">
+          <div class="tooltip">
+            <p> {{ item.content }} </p>
+          </div>
+        </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% endif %}
 
 <section class="section-photo-full">
 
