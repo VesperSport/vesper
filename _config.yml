@@ -1,9 +1,9 @@
 name: Vesper Sport
 title: Vesper Sport
 email: info@vespersport.com
-description: Kiteboards and wakeboards handcrafted in Poland from European materials.
+description: Kitesurf and wakeboards handcrafted in Poland from European materials.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: vespersport.com # the base hostname & protocol for your site
+url: http://vespersport.com # the base hostname & protocol for your site
 twitter_username:
 github_username:
 facebook: vespersport
